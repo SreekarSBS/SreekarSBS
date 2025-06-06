@@ -1,5 +1,12 @@
-### Hi there 👋
-![Typing Animation](./typing.svg)
+
+
+
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=4000&pause=4000&color=61dafb&center=true&vCenter=true&multiline=true&width=600&lines=Hello+there!!+This+is+Sreekar%F0%9F%91%8B)](https://git.io/typing-svg)
+
+
+  ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=SreekarSBS&theme=react)
+  ![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=SreekarSBS&theme=react)
+  ![](http://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=SreekarSBS&theme=react&utcOffset=8)
 
 <!--
 **SreekarSBS/SreekarSBS** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
