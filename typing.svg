@@ -1,5 +1,5 @@
 <svg
-  width="400"
+  width="600"
   height="60"
   viewBox="0 0 400 60"
   fill="none"
@@ -9,41 +9,56 @@
     .text {
       font-family: 'Fira Code', monospace;
       font-size: 28px;
-      fill: #61dafb; /* React blue */
+      fill: #61dafb;
       letter-spacing: 0.1em;
-      white-space: nowrap;
-      overflow: hidden;
-      border-right: 3px solid #61dafb;
-      animation:
-        typing 4s steps(25, end) forwards,
-        blink 0.75s step-end infinite;
-      opacity: 0;
-      animation-fill-mode: forwards;
-      animation-delay: 0.2s, 4s;
     }
 
-    /* Typing effect: reveal characters step by step */
+    .cursor {
+      fill: #61dafb;
+      animation: blink 1s step-end infinite;
+    }
+
+    /* Animate clipPath width to reveal text */
+    #clipRect {
+      animation: typing 4s steps(22) forwards;
+    }
+
     @keyframes typing {
       from {
         width: 0;
-        opacity: 1;
       }
       to {
-        width: 18ch;
-        opacity: 1;
+        width: 360px; /* Adjust according to text length */
       }
     }
 
-    /* Cursor blink */
     @keyframes blink {
       0%, 100% {
-        border-color: transparent;
+        opacity: 1;
       }
       50% {
-        border-color: #61dafb;
+        opacity: 0;
       }
     }
   </style>
 
-  <text x="10" y="40" class="text">Namaste! This is Sreekar</text>
+  <!-- Clip path to reveal text -->
+  <clipPath id="textClip">
+    <rect id="clipRect" x="0" y="0" height="60" width="0" />
+  </clipPath>
+
+  <!-- Text with clipPath applied -->
+  <text x="10" y="40" class="text" clip-path="url(#textClip)">
+    Namaste! This is Sreekar
+  </text>
+
+  <!-- Blinking cursor rectangle -->
+  <rect
+    class="cursor"
+    x="10"
+    y="12"
+    width="3"
+    height="28"
+    style="animation-delay: 4s;"
+  />
 </svg>
