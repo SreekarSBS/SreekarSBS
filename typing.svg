@@ -1,0 +1,49 @@
+<svg
+  width="400"
+  height="60"
+  viewBox="0 0 400 60"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <style>
+    .text {
+      font-family: 'Fira Code', monospace;
+      font-size: 28px;
+      fill: #61dafb; /* React blue */
+      letter-spacing: 0.1em;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 3px solid #61dafb;
+      animation:
+        typing 4s steps(25, end) forwards,
+        blink 0.75s step-end infinite;
+      opacity: 0;
+      animation-fill-mode: forwards;
+      animation-delay: 0.2s, 4s;
+    }
+
+    /* Typing effect: reveal characters step by step */
+    @keyframes typing {
+      from {
+        width: 0;
+        opacity: 1;
+      }
+      to {
+        width: 18ch;
+        opacity: 1;
+      }
+    }
+
+    /* Cursor blink */
+    @keyframes blink {
+      0%, 100% {
+        border-color: transparent;
+      }
+      50% {
+        border-color: #61dafb;
+      }
+    }
+  </style>
+
+  <text x="10" y="40" class="text">Crafting Code, One Line at a Time</text>
+</svg>
